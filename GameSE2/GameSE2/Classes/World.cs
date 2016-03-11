@@ -11,6 +11,9 @@ namespace GameSE2.Classes
     {
         private bool gameWon;
         private bool gameOver;
+        private Map map;
+        private Enemy enemy;
+        private Player player;
 
         public bool GameWon
         {

@@ -9,10 +9,12 @@ namespace GameSE2.Classes
 {
     public class Map
     {
+        private List<Cell> Cells; 
         public Size MapSize { get; set; }
         public Size CellSize { get; set; }
         public Size CellCount { get; set; }
         public Point GoalPosition { get; set; }
+        
 
         public Map(Size mapSize, Size cellSize, Size cellCount, Point goalPosition)
         {
