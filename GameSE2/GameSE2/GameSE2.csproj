@@ -48,8 +48,10 @@
   <ItemGroup>
     <Compile Include="Classes\Cell.cs" />
     <Compile Include="Classes\Enemy.cs" />
+    <Compile Include="Classes\Entity.cs" />
     <Compile Include="Classes\Map.cs" />
     <Compile Include="Classes\Player.cs" />
+    <Compile Include="Classes\Vector.cs" />
     <Compile Include="Classes\World.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
