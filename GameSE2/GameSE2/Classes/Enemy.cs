@@ -7,25 +7,13 @@ using System.Threading.Tasks;
 
 namespace GameSE2.Classes
 {
-    public class Enemy
+    public class Enemy : Character
     {
-        public Point Position { get; set; }
-        public int HitPoints { get; set; }
-
+        
         public Enemy(Point position, int hitPoints)
         {
-            Position = position;
-            HitPoints = hitPoints;
-        }
-
-        public void Update()
-        {
-                    
-        }
-
-        public void Draw(Graphics g)
-        {
-            
+            this.Position = position;
+            this.HitPoints = hitPoints;
         }
 
         public void Attack(Player player)

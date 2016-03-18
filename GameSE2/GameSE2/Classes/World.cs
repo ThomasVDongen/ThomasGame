@@ -12,9 +12,13 @@ namespace GameSE2.Classes
         private bool gameWon;
         private bool gameOver;
         private Map map;
-        private Enemy enemy;
+        private List<Enemy> Enemies;
         private Player player;
 
+        public World(bool gamewon, bool gameover, Map map, List<Enemy> enemies, Player player)
+        {
+            
+        }
         public bool GameWon
         {
             get { return gameWon; }

@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Cell.cs" />
+    <Compile Include="Classes\Character.cs" />
     <Compile Include="Classes\Enemy.cs" />
     <Compile Include="Classes\Entity.cs" />
     <Compile Include="Classes\Map.cs" />

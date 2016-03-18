@@ -20,14 +20,14 @@ namespace UnitTestProjectGame
             Point point = new Point(23, 32);
             bool bl1 = false;
             int hitpoints = 20;
-            Player player = new Player(point, bl1, hitpoints);
+            Player player = new Player(bl1, hitpoints,point);
             player.Draw(g);
             player.Update();
             player.Interaction(2);
             player.HitPoints = 19;
-            player.PositionPoint = new Point(10,1);
+            player.Position = new Point(10,1);
             player.PowerUp = true;
-            p = player.PositionPoint;
+            p = player.Position;
             bl2 = player.PowerUp;
             hitp2 = player.HitPoints;
         }
@@ -41,7 +41,7 @@ namespace UnitTestProjectGame
             hitp2 = enemy.HitPoints;
             enemy.HitPoints = 19;
             enemy.Position = new Point(10,1);
-            enemy.Attack(new Player(point, false, 18));
+            enemy.Attack(new Player(false, 18, point));
             enemy.Draw(g);
             enemy.Update();
 
@@ -58,6 +58,12 @@ namespace UnitTestProjectGame
         public void TestMethodVector()
         {
             Vector vector = new Vector();
+        }
+
+        [TestMethod]
+        public void TestMethodCharacter()
+        {
+            Character character = new Character(p, hitp2);
         }
     }
 }

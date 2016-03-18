@@ -2,34 +2,24 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.Remoting.Metadata.W3cXsd2001;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace GameSE2.Classes
 {
-    public class Player
+    public class Player : Character
     {
-        public Point PositionPoint { get; set; }
         public bool PowerUp { get; set; } 
-        public int HitPoints { get; set; }
-
-        public Player(Point positionPoint, bool powerUp, int hitPoints)
+       
+        public Player(bool powerUp, int hipoints, Point point)
         {
-            PositionPoint = positionPoint;
-            PowerUp = powerUp;
-            HitPoints = hitPoints;
+            this.HitPoints = hipoints;
+            this.Position = point;
+            this.PowerUp = powerUp;
         }
 
-        public void Update()
-        {
-            
-        }
-
-        public void Draw(Graphics g)
-        {
-            
-        }
-
+       
         public void Interaction(int keycode)
         {
             
