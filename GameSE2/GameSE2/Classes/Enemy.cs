@@ -20,5 +20,15 @@ namespace GameSE2.Classes
         {
             
         }
+
+        public override void Update()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void Draw(Graphics g)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

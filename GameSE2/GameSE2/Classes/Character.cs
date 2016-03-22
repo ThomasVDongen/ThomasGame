@@ -7,29 +7,15 @@ using System.Threading.Tasks;
 
 namespace GameSE2.Classes
 {
-    public class Character
+    public abstract class Character
     {
         public Point Position { get; set; }
         public int HitPoints { get; set; }
 
-        public Character(Point point, int hitpoints)
-        {
-            Position = point;
-            HitPoints = hitpoints;
-        }
 
-        public Character()
-        {
-            
-        }
-        public void Update()
-        {
+        public abstract void Update();
 
-        }
-
-        public void Draw(Graphics g)
-        {
-
-        }
+        public abstract void Draw(Graphics g);
+       
     }
 }
