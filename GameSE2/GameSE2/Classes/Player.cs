@@ -11,6 +11,9 @@ namespace GameSE2.Classes
     public class Player : Character
     {
         public bool PowerUp { get; set; } 
+
+        public int Strenght { get; set; }
+        public List<Item> Inventory { get; set; } 
        
         public Player(bool powerUp, int hipoints, Point point)
         {
